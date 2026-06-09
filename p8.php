@@ -7,11 +7,18 @@
 </head>
 <body>
 <?php
-    $i =array('cold','hot','rain');
-    foreach($i as $d){
-        echo $d."<br>";
-        
-    }
-    ?>
+ error_reporting(0);
+ ?>
+
+<form method="get">
+        <input type="text" name="uname">
+        <input type="submit" name="submit" value="submit">
+</form>
+
+<?php
+    $nm = $_GET['uname'];
+    echo "Hello, " . $nm;
+?>
+
 </body>
 </html>
